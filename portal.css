@@ -1,0 +1,11 @@
+@-moz-document url(about:newtab){
+  /* Fix cell sizing. Note: you may need to play around with the values for different numbers of rows and columns */
+  /* Currently it works for 3 rows x 4 columns */
+  .newtab-cell { width: 19% !important; height: 25% !important; }
+  
+  /* Fix grid sizing */
+  #newtab-grid { max-height: 100vh !important; max-width: none !important; overflow: hidden !important; margin: 50%; }
+  
+  /* Hide unnecessary elements */
+  #newtab-search-container, #newtab-search-logo, #newtab-margin-top, #newtab-margin-bottom, #newtab-intro-what, .newtab-side-margin, #newtab-customize-button, .newtab-undo-container { display:none !important; }
+}
